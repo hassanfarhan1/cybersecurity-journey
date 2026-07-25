@@ -1,0 +1,156 @@
+# Linux Basics for SOC Analysts
+
+## Lesson 1: Introduction to Linux
+
+### What is an Operating System?
+
+An Operating System (OS) is the software that manages a computer's hardware and software resources. It controls components such as the CPU, memory (RAM), storage, files, users, and running applications, allowing the computer to function properly.
+
+Examples of operating systems:
+- Linux
+- Windows
+- macOS
+
+---
+
+## What is Linux?
+
+Linux is an open-source operating system widely used in cybersecurity, servers, cloud computing, and networking. It is known for its stability, security, and flexibility.
+
+Cybersecurity professionals commonly use Linux because:
+- It is lightweight and efficient.
+- It has strong security features.
+- It supports many cybersecurity tools.
+- It provides powerful command-line capabilities.
+
+---
+
+## Linux vs Windows File System
+
+One major difference between Linux and Windows is how they organize files.
+
+### Windows
+
+Windows uses separate drives such as:
+
+```text
+C:\
+D:\
+E:\
+```
+
+### Linux
+
+Linux does not use drive letters.
+
+Everything starts from a single root directory:
+
+```text
+/
+```
+
+This structure is called a hierarchical file system.
+
+---
+
+## Important Linux Directories
+
+### /
+
+The root directory is the highest level of the Linux file system. Every file and directory starts from this location.
+
+---
+
+### /home
+
+Stores personal directories for users.
+
+Example:
+
+```text
+/home/hassan
+```
+
+This directory may contain:
+- Desktop
+- Documents
+- Downloads
+- Pictures
+
+---
+
+### /etc
+
+Contains important system configuration files.
+
+Examples include:
+- Network configuration
+- SSH configuration
+- System settings
+
+---
+
+### /var
+
+Stores files that frequently change while the system is running.
+
+One important directory inside it is:
+
+```text
+/var/log
+```
+
+---
+
+### /var/log
+
+This directory contains system log files.
+
+For a SOC Analyst, logs are one of the most valuable sources of information because they help investigate:
+- Failed login attempts
+- Successful logins
+- System errors
+- Security events
+- Suspicious activities
+
+Logs act as digital evidence during security investigations.
+
+---
+
+### /tmp
+
+Stores temporary files that are created while programs are running.
+
+---
+
+## Root User vs Root Directory
+
+### Root User
+
+The root user is the administrator account with full privileges to manage the Linux system.
+
+### Root Directory (/)
+
+The root directory is the starting point of the Linux file system.
+
+Although both use the word "root," they have different meanings.
+
+---
+
+## Key Points Learned
+
+- Linux is an operating system.
+- The operating system manages computer resources.
+- Linux uses a hierarchical file system.
+- Everything starts from the root directory (/).
+- User files are usually stored in /home.
+- Configuration files are stored in /etc.
+- Logs are mainly stored in /var/log.
+- SOC Analysts use logs to investigate security incidents.
+- Root User and Root Directory are different concepts.
+
+---
+
+## Summary
+
+Today's lesson introduced the Linux operating system, its file system structure, and the purpose of some important directories. Understanding these directories is essential because SOC Analysts rely on them to locate system logs and investigate security events.
