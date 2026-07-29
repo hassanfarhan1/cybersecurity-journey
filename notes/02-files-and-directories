@@ -1,0 +1,79 @@
+# Lesson 02 - Creating and Managing Files & Directories
+
+## Objective
+
+Learn how to create, copy, rename, move, and delete files and directories in Linux.
+
+---
+
+## Commands Learned
+
+### mkdir
+
+Creates a new directory.
+
+Example:
+
+```bash
+mkdir LinuxPractice
+```
+
+---
+
+### touch
+
+Creates a new empty file.
+
+Example:
+
+```bash
+touch lesson2.txt
+```
+
+---
+
+### cp
+
+Copies a file.
+
+Example:
+
+```bash
+cp lesson2.txt backup.txt
+```
+
+---
+
+### mv
+
+Moves a file or renames it.
+
+Rename example:
+
+```bash
+mv lesson2.txt linux_notes.txt
+```
+
+Move example:
+
+```bash
+mv linux_notes.txt ~/Documents/
+```
+
+---
+
+### rm
+
+Deletes a file.
+
+Example:
+
+```bash
+rm backup.txt
+```
+
+---
+
+## Summary
+
+This lesson introduced the basic Linux commands used to manage files and directories. These commands are essential for Linux administration and cybersecurity tasks such as organizing evidence, creating reports, managing logs, and handling investigation files.
