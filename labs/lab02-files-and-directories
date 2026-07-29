@@ -1,0 +1,76 @@
+# Lab 02 - Files and Directories
+
+## Objective
+
+Practice creating, copying, renaming, moving, and deleting files in Linux.
+
+---
+
+## Environment
+
+- Operating System: Kali Linux
+- Terminal: Zsh
+- User: hassan
+
+---
+
+## Commands Executed
+
+```bash
+cd ~/Desktop
+
+mkdir LinuxPractice
+
+cd LinuxPractice
+
+touch lesson2.txt
+
+ls
+
+cp lesson2.txt backup.txt
+
+ls
+
+mv lesson2.txt linux_notes.txt
+
+ls
+
+rm backup.txt
+
+ls
+```
+
+---
+
+## Expected Output
+
+Before deleting:
+
+```
+backup.txt
+linux_notes.txt
+```
+
+After deleting:
+
+```
+linux_notes.txt
+```
+
+---
+
+## Skills Gained
+
+- Create directories
+- Create files
+- Copy files
+- Rename files
+- Move files
+- Delete files
+- Verify results using `ls`
+
+---
+
+## Conclusion
+
+This lab demonstrated the basic Linux file management workflow. These commands are frequently used by Linux administrators and cybersecurity professionals when organizing files, collecting logs, and managing investigation data.
