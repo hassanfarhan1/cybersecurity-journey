@@ -1,0 +1,61 @@
+# Lab 07 - Linux Networking Basics
+
+## Objective
+
+Identify this machine's network interfaces, IP configuration, gateway, and listening ports.
+
+---
+
+## Environment
+
+- Operating System: Kali Linux
+- User: hassan
+
+---
+
+## Commands Executed
+
+```bash
+ip addr
+ip route
+ss -tuln
+```
+
+---
+
+## Findings
+
+| Item | Value |
+|---|---|
+| Hostname | kali |
+| Interface | eth0 |
+| IP Address | 192.168.18.181/24 |
+| MAC Address | 00:0c:29:1b:9f:22 |
+| Network | 192.168.18.0/24 |
+| Broadcast | 192.168.18.255 |
+| Default Gateway | 192.168.18.1 |
+| Loopback | 127.0.0.1 |
+
+`ss -tuln` output showed one TCP listening socket on port 22:
+
+```text
+tcp   LISTEN   0   128   0.0.0.0:22   0.0.0.0:*
+```
+
+This indicates SSH may be the service listening on this port.
+
+---
+
+## Skills Gained
+
+- Reading `ip addr` output: interfaces, IP address, CIDR, MAC address
+- Understanding the difference between IP address and MAC address
+- Identifying the default gateway with `ip route`
+- Interpreting `ss -tuln` output to find listening ports
+- Connecting an open port to a potential service and attack surface
+
+---
+
+## Conclusion
+
+This lab established a baseline understanding of the machine's own network identity - interface, IP, gateway, and listening ports. This baseline is the starting point for any future network reconnaissance or troubleshooting work.
